@@ -23,12 +23,18 @@
 				<input type="text" name="no_hp" id="no_hp" class="form-control" require>
 			</div>
 			<div class="mb-3">
-				<label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-				<select name="jenis_kelamin" id="jenis_kelamin" class="form-select" require>
-					<option value="Pria">Pria</option>
-					<option value="Wanita">Wanita</option>
-				</select>
-			</div>
+    <label class="form-label">Jenis Kelamin</label>
+    <div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="jenis_kelamin" id="jenis_kelamin_pria" value="Pria" required>
+            <label class="form-check-label" for="jenis_kelamin_pria">Pria</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="jenis_kelamin" id="jenis_kelamin_wanita" value="Wanita" required>
+            <label class="form-check-label" for="jenis_kelamin_wanita">Wanita</label>
+        </div>
+    </div>
+</div>
 			<div class="mb-3">
 				<label for="jurusan" class="form-label">Jurusan</label>
 				<select class="form-select" name="jurusan" id="jurusan" require>
